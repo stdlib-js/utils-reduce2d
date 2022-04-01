@@ -1,0 +1,44 @@
+{
+  "name": "@stdlib/utils-reduce2d",
+  "version": "0.0.0",
+  "description": "Reduce the number of dimensions by one of a two-dimensional nested array by applying a function against an accumulator and each element along the innermost dimension and returning the accumulation results as a one-dimensional array.",
+  "license": "Apache-2.0",
+  "main": "./bundle.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/utils-reduce2d.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdutils",
+    "stdutil",
+    "utilities",
+    "utility",
+    "utils",
+    "util",
+    "reduce",
+    "reducer",
+    "reduction",
+    "array.reduce",
+    "iterate",
+    "aggregate",
+    "accumulator",
+    "accumulate",
+    "accumulation",
+    "collection",
+    "typed-array",
+    "typed array",
+    "typed",
+    "array",
+    "array-like",
+    "matrix"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
