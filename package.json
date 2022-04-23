@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/utils-reduce2d",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Reduce the number of dimensions by one of a two-dimensional nested array by applying a function against an accumulator and each element along the innermost dimension and returning the accumulation results as a one-dimensional array.",
   "license": "Apache-2.0",
   "author": {
