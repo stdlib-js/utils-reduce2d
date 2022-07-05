@@ -34,30 +34,38 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/utils-reduce2d
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var reduce2d = require( '@stdlib/utils-reduce2d' );
+reduce2d = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-reduce2d@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var reduce2d = require( 'path/to/vendor/umd/utils-reduce2d/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-reduce2d@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.reduce2d;
+})();
+</script>
 ```
 
 #### reduce2d( arr, initial, fcn\[, thisArg] )
@@ -137,9 +145,14 @@ var cnt = ctx.count;
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var filledarrayBy = require( '@stdlib/array-filled-by' );
-var discreteUniform = require( '@stdlib/random-base-discrete-uniform' ).factory;
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-filled-by@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {.factory;
 var naryFunction = require( '@stdlib/utils-nary-function' );
 var add = require( '@stdlib/math-base-ops-add' );
 var zeros = require( '@stdlib/array-base-zeros' );
@@ -164,6 +177,11 @@ console.log( x );
 
 console.log( 'y:' );
 console.log( y );
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
