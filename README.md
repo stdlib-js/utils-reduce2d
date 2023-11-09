@@ -192,6 +192,13 @@ console.log( y );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/utils-map2d`][@stdlib/utils/map2d]</span><span class="delimiter">: </span><span class="description">apply a function to each nested element in an array of arrays and assign the result to a nested element in a new array of arrays.</span>
+-   <span class="package-name">[`@stdlib/utils-reduce`][@stdlib/utils/reduce]</span><span class="delimiter">: </span><span class="description">apply a function against an accumulator and each element in an array and return the accumulated result.</span>
+
 </section>
 
 <!-- /.related -->
@@ -264,6 +271,14 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [branches-url]: https://github.com/stdlib-js/utils-reduce2d/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/utils-reduce2d/main/LICENSE
+
+<!-- <related-links> -->
+
+[@stdlib/utils/map2d]: https://github.com/stdlib-js/utils-map2d
+
+[@stdlib/utils/reduce]: https://github.com/stdlib-js/utils-reduce
+
+<!-- </related-links> -->
 
 </section>
 
