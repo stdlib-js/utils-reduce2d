@@ -48,7 +48,7 @@
     "@stdlib/array-filled-by": "^0.1.0",
     "@stdlib/array-float64": "^0.1.1",
     "@stdlib/assert-is-array": "^0.1.1",
-    "@stdlib/bench": "^0.2.0",
+    "@stdlib/bench": "^0.2.1",
     "@stdlib/math-base-ops-add": "^0.1.0",
     "@stdlib/random-base-discrete-uniform": "^0.1.0",
     "@stdlib/utils-nary-function": "^0.1.0",
