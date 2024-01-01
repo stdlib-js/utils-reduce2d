@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var bench = require( '@stdlib/bench' );
+var bench = require( '@stdlib/bench-harness' );
 var isArray = require( '@stdlib/assert-is-array' );
 var add = require( '@stdlib/math-base-ops-add' );
 var naryFunction = require( '@stdlib/utils-nary-function' );
