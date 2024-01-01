@@ -45,30 +45,14 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/utils-reduce2d
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var reduce2d = require( '@stdlib/utils-reduce2d' );
+import reduce2d from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-reduce2d@esm/index.mjs';
 ```
 
 #### reduce2d( arr, initial, fcn\[, thisArg] )
@@ -76,8 +60,8 @@ var reduce2d = require( '@stdlib/utils-reduce2d' );
 Reduces the number of dimensions by one of a two-dimensional nested array by applying a function against an accumulator and each element along the innermost dimension and returning the accumulation results as a one-dimensional array.
 
 ```javascript
-var naryFunction = require( '@stdlib/utils-nary-function' );
-var add = require( '@stdlib/math-base-ops-add' );
+import naryFunction from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-nary-function@esm/index.mjs';
+import add from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-ops-add@esm/index.mjs';
 
 var arr = [
     [ 1, 2, 3 ],
@@ -100,7 +84,7 @@ To set the `this` context when invoking the input function, provide a `thisArg`.
 <!-- eslint-disable no-invalid-this -->
 
 ```javascript
-var add = require( '@stdlib/math-base-ops-add' );
+import add from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-ops-add@esm/index.mjs';
 
 function fcn( acc, v ) {
     this.count += 1;
@@ -147,13 +131,18 @@ var cnt = ctx.count;
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var filledarrayBy = require( '@stdlib/array-filled-by' );
-var discreteUniform = require( '@stdlib/random-base-discrete-uniform' ).factory;
-var naryFunction = require( '@stdlib/utils-nary-function' );
-var add = require( '@stdlib/math-base-ops-add' );
-var zeros = require( '@stdlib/array-base-zeros' );
-var reduce2d = require( '@stdlib/utils-reduce2d' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="module">
+
+import filledarrayBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled-by@esm/index.mjs';
+var discreteUniform = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform' ).factory;
+import naryFunction from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-nary-function@esm/index.mjs';
+import add from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-ops-add@esm/index.mjs';
+import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zeros@esm/index.mjs';
+import reduce2d from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-reduce2d@esm/index.mjs';
 
 function fill( i ) {
     var rand = discreteUniform( -10*(i+1), 10*(i+1) );
@@ -174,6 +163,10 @@ console.log( x );
 
 console.log( 'y:' );
 console.log( y );
+
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -212,7 +205,7 @@ console.log( y );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -274,9 +267,9 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/utils/map2d]: https://github.com/stdlib-js/utils-map2d
+[@stdlib/utils/map2d]: https://github.com/stdlib-js/utils-map2d/tree/esm
 
-[@stdlib/utils/reduce]: https://github.com/stdlib-js/utils-reduce
+[@stdlib/utils/reduce]: https://github.com/stdlib-js/utils-reduce/tree/esm
 
 <!-- </related-links> -->
 
