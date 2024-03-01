@@ -1,0 +1,4 @@
+// Copyright (c) 2024 The Stdlib Authors. License is Apache-2.0: http://www.apache.org/licenses/LICENSE-2.0
+/// <reference types="./index.d.ts" />
+import r from"https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-array-like-object@v0.2.1-esm/index.mjs";import t from"https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-collection@v0.2.1-esm/index.mjs";import e from"https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-function@v0.2.1-esm/index.mjs";import s from"https://cdn.jsdelivr.net/gh/stdlib-js/error-tools-fmtprodmsg@v0.2.1-esm/index.mjs";function o(o,i,n,l){var d,h,m,p,f,j,a;if(!r(o))throw new TypeError(s("1XJ2O",o));if(!r(i))throw new TypeError(s("1XJ2y",i));if(i.length!==o.length)throw new RangeError(s("1XJ1p"));if(!e(n))throw new TypeError(s("1XJ3N",n));for(m=o.length,d=[],j=0;j<m;j++){if(f=o[j],!t(f))throw new TypeError(s("1XJBM",j,f));for(p=f.length,h=i[j],a=0;a<p;a++)h=n.call(l,h,f[a],[j,a],o);d.push(h)}return d}export{o as default};
+//# sourceMappingURL=index.mjs.map
