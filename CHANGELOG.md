@@ -77,15 +77,13 @@ A total of 2 people contributed to this release. Thank you to the following cont
 
 ### BREAKING CHANGES
 
--   [`f270c07`](https://github.com/stdlib-js/stdlib/commit/f270c078cd4394120cb3cf2d92a9b02892052fe8): update callback signature
--   [`f270c07`](https://github.com/stdlib-js/stdlib/commit/f270c078cd4394120cb3cf2d92a9b02892052fe8): consolidate index arguments into a single argument 
+-   [`f270c07`](https://github.com/stdlib-js/stdlib/commit/f270c078cd4394120cb3cf2d92a9b02892052fe8): consolidate index arguments into a single argument
 
     -   To migrate, users should access the array element indices via the third
-    argument, where the first element is the first array dimension index and the
-    second element is the second array dimension index.
+        argument, where the first element is the first array dimension index and the
+        second element is the second array dimension index.
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
