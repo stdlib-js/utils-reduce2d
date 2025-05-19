@@ -45,38 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-reduce2d
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-reduce2d = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-reduce2d@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var reduce2d = require( 'path/to/vendor/umd/utils-reduce2d/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-reduce2d@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.reduce2d;
-})();
-</script>
+var reduce2d = require( '@stdlib/utils-reduce2d' );
 ```
 
 #### reduce2d( arr, initial, fcn\[, thisArg] )
@@ -85,7 +79,7 @@ Reduces the number of dimensions by one of a two-dimensional nested array by app
 
 ```javascript
 var naryFunction = require( '@stdlib/utils-nary-function' );
-var add = require( '@stdlib/math-base-ops-add' );
+var add = require( '@stdlib/number-float64-base-add' );
 
 var arr = [
     [ 1, 2, 3 ],
@@ -108,7 +102,7 @@ To set the `this` context when invoking the input function, provide a `thisArg`.
 <!-- eslint-disable no-invalid-this -->
 
 ```javascript
-var add = require( '@stdlib/math-base-ops-add' );
+var add = require( '@stdlib/number-float64-base-add' );
 
 function fcn( acc, v ) {
     this.count += 1;
@@ -155,16 +149,11 @@ var cnt = ctx.count;
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-filled-by@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {.factory;
+```javascript
+var filledarrayBy = require( '@stdlib/array-filled-by' );
+var discreteUniform = require( '@stdlib/random-base-discrete-uniform' ).factory;
 var naryFunction = require( '@stdlib/utils-nary-function' );
-var add = require( '@stdlib/math-base-ops-add' );
+var add = require( '@stdlib/number-float64-base-add' );
 var zeros = require( '@stdlib/array-base-zeros' );
 var reduce2d = require( '@stdlib/utils-reduce2d' );
 
@@ -187,11 +176,6 @@ console.log( x );
 
 console.log( 'y:' );
 console.log( y );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -247,7 +231,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -295,9 +279,9 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/utils/map2d]: https://github.com/stdlib-js/utils-map2d/tree/umd
+[@stdlib/utils/map2d]: https://github.com/stdlib-js/utils-map2d
 
-[@stdlib/utils/reduce]: https://github.com/stdlib-js/utils-reduce/tree/umd
+[@stdlib/utils/reduce]: https://github.com/stdlib-js/utils-reduce
 
 <!-- </related-links> -->
 
