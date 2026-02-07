@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/utils-reduce2d",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Reduce the number of dimensions by one of a two-dimensional nested array by applying a function against an accumulator and each element along the innermost dimension and returning the accumulation results as a one-dimensional array.",
   "license": "Apache-2.0",
   "author": {
@@ -37,19 +37,19 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/assert-is-array-like-object": "^0.2.2",
-    "@stdlib/assert-is-collection": "^0.2.2",
+    "@stdlib/assert-is-array-like-object": "^0.2.3",
+    "@stdlib/assert-is-collection": "^0.2.3",
     "@stdlib/assert-is-function": "^0.2.2",
     "@stdlib/string-format": "^0.2.3",
     "@stdlib/types": "^0.4.3",
-    "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.3"
   },
   "devDependencies": {
     "@stdlib/array-base-zeros": "^0.2.2",
     "@stdlib/array-filled-by": "^0.3.0",
     "@stdlib/array-float64": "^0.2.2",
     "@stdlib/assert-is-array": "^0.2.2",
-    "@stdlib/number-float64-base-add": "^0.1.0",
+    "@stdlib/number-float64-base-add": "^0.1.1",
     "@stdlib/random-base-discrete-uniform": "^0.2.1",
     "@stdlib/utils-nary-function": "^0.2.3",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
